@@ -1,2 +1,4 @@
-// Small detail: show the current year in the footer.
-document.getElementById("year").textContent = new Date().getFullYear();
+
+const year = document.getElementById("year");
+
+year.textContent = new Date().getFullYear();
