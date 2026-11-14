@@ -1,4 +1,7 @@
  
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -7,10 +10,9 @@
 }
 
 body {
-  background: #0b1020;
-  color: #f5f5ff;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+  background: #fffaf2;
+  color: #29213b;
 }
 
 header {
@@ -18,187 +20,298 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 8%;
-  background: #141c31;
+  background: #fffaf2;
   position: sticky;
   top: 0;
   z-index: 10;
+  box-shadow: 0 2px 12px #29213b0b;
 }
 
 .logo {
-  color: white;
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 26px;
+  font-weight: 800;
+  color: #29213b;
   text-decoration: none;
 }
 
-.logo span, h1 span {
-  color: #9b8cff;
+.logo span {
+  color: #f08a58;
 }
 
 nav {
   display: flex;
-  gap: 18px;
+  gap: 22px;
   flex-wrap: wrap;
 }
 
-nav a, a {
-  color: #aebaff;
+nav a {
+  color: #625a70;
   text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
 }
 
-nav a:hover, a:hover {
-  color: #9b8cff;
+nav a:hover {
+  color: #8b62cf;
 }
 
 .hero {
   min-height: 85vh;
+  padding: 80px 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 30px;
-  padding: 70px 10%;
+  gap: 35px;
+  background: #f3ebff;
 }
 
-.tag {
-  color: #6de0c2;
+.small-title {
+  color: #8b62cf;
+  font-size: 12px;
   letter-spacing: 2px;
-  font-size: 13px;
-  margin-bottom: 12px;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
 h1 {
-  font-size: clamp(35px, 7vw, 60px);
-  margin-bottom: 10px;
+  font-size: clamp(38px, 6vw, 65px);
+  line-height: 1.2;
+  margin-bottom: 15px;
 }
 
-h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
+h1 span {
+  color: #8b62cf;
 }
 
 .hero h2 {
-  color: #aebaff;
-  font-size: 25px;
+  font-size: 23px;
+  color: #f08a58;
+  margin-bottom: 18px;
 }
 
-.hero p:not(.tag) {
-  color: #b8c0d5;
-  max-width: 520px;
-  margin-bottom: 25px;
-}
-
-.profile {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  background: linear-gradient(135deg, #9b8cff, #6de0c2);
-  color: #101426;
-  font-size: 55px;
-  font-weight: bold;
-  flex-shrink: 0;
+.description {
+  max-width: 480px;
+  color: #655d72;
+  line-height: 1.8;
+  margin-bottom: 28px;
 }
 
 .btn {
   display: inline-block;
-  background: #9b8cff;
-  color: #101426;
-  padding: 12px 20px;
-  border-radius: 8px;
-  font-weight: bold;
+  background: #8b62cf;
+  color: white;
+  padding: 13px 23px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
 }
 
-section:not(.hero) {
-  padding: 75px 10%;
-  border-top: 1px solid #27324c;
+.hero-art {
+  position: relative;
+  padding: 30px;
 }
 
-section p {
-  color: #b8c0d5;
+.circle {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  background: linear-gradient(140deg, #8b62cf, #f08a58);
+  display: grid;
+  place-items: center;
+  box-shadow: 0 20px 45px #8b62cf40;
 }
 
-.info {
-  background: #141c31;
-  padding: 20px;
-  border-radius: 12px;
+.circle span {
+  font-size: 65px;
+  color: white;
+  font-weight: 800;
+}
+
+.floating {
+  position: absolute;
+  bottom: 15px;
+  right: -5px;
+  background: white;
+  padding: 13px 18px;
+  border-radius: 30px;
+  box-shadow: 0 8px 25px #0001;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.section {
+  padding: 80px 10%;
+}
+
+.section h2 {
+  font-size: 36px;
+  margin-bottom: 25px;
+}
+
+.about-box {
+  background: #f3ebff;
+  padding: 28px;
+  border-radius: 18px;
+  line-height: 1.9;
+  color: #625a70;
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
   margin-top: 22px;
 }
 
-.info p {
-  margin: 8px 0;
+.facts div {
+  background: #fff0e7;
+  padding: 22px;
+  border-radius: 15px;
+  text-align: center;
 }
 
-.cards, .projects {
+.facts h3 {
+  color: #8b62cf;
+}
+
+.facts p {
+  font-size: 13px;
+  color: #625a70;
+}
+
+.skill-grid,
+.project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 18px;
 }
 
-.card, .project {
-  background: #141c31;
-  border: 1px solid #27324c;
+.skill {
+  background: white;
+  border: 1px solid #eee5fa;
+  border-radius: 14px;
   padding: 22px;
-  border-radius: 12px;
+  font-weight: 700;
+  box-shadow: 0 5px 18px #39245a08;
 }
 
-.card {
-  text-align: center;
-  font-weight: bold;
+.skill span {
+  display: block;
+  font-size: 12px;
+  color: #8b62cf;
+  font-weight: 500;
+  margin-top: 6px;
 }
 
-.project small {
-  color: #6de0c2;
-  font-weight: bold;
+.subtext {
+  color: #746b80;
+  margin: -12px 0 25px;
+}
+
+.project {
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid #eee5fa;
+  transition: 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px #39245a15;
+}
+
+.status {
+  color: #e17b4d;
+  font-size: 10px;
+  font-weight: 800;
   letter-spacing: 1px;
 }
 
 .project h3 {
-  margin: 12px 0;
+  margin: 13px 0;
+  font-size: 18px;
 }
 
 .project p {
-  font-size: 14px;
+  font-size: 13px;
+  color: #746b80;
+  line-height: 1.7;
 }
 
-.note {
-  margin-bottom: 22px;
+.contact {
+  background: #f3ebff;
 }
 
-#contact p {
-  margin: 12px 0;
+.contact > p:not(.small-title) {
+  color: #746b80;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  margin-top: 25px;
+}
+
+.contact-links a {
+  background: #8b62cf;
+  color: white;
+  padding: 11px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 13px;
 }
 
 footer {
+  background: #29213b;
+  color: white;
   text-align: center;
-  padding: 25px;
-  color: #aebaff;
-  background: #141c31;
+  padding: 22px;
+  font-size: 13px;
 }
 
-@media (max-width: 650px) {
+@media(max-width: 650px) {
   header {
     flex-direction: column;
-    gap: 15px;
+    gap: 14px;
   }
 
   nav {
     justify-content: center;
-    gap: 12px;
+    gap: 13px;
   }
 
   .hero {
     flex-direction: column-reverse;
     text-align: center;
-    padding-top: 55px;
-  }
-
-  .hero p:not(.tag) {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  section:not(.hero) {
     padding: 55px 7%;
   }
+
+  .hero-art {
+    padding: 20px;
+  }
+
+  .circle {
+    width: 175px;
+    height: 175px;
+  }
+
+  .circle span {
+    font-size: 48px;
+  }
+
+  .floating {
+    right: -12px;
+  }
+
+  .section {
+    padding: 60px 7%;
+  }
+
+  .facts {
+    grid-template-columns: 1fr;
+  }
 }
+
