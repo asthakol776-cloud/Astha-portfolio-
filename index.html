@@ -1,123 +1,193 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Astha Kol | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Astha Kol | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-  <a class="logo" href="#home">Astha<span>.</span></a>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <h2>Astha<span>.</span></h2>
 
-<section class="hero" id="home">
-  <div>
-    <p class="tag">COMPUTER SCIENCE STUDENT</p>
-    <h1>Hello, I'm <span>Astha Kol</span></h1>
-    <h2>Aspiring Software Engineer</h2>
-    <p>I love learning new technologies, solving problems and building creative projects.</p>
-    <a class="btn" href="#projects">Explore My Work</a>
-  </div>
-  <div class="profile">AK</div>
-</section>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section id="about">
-  <p class="tag">GET TO KNOW ME</p>
-  <h2>About Me</h2>
-  <p>
-    I am a B.Tech Computer Science student.
-    I have completed learning React and I am currently
-    learning Node.js. I am also practising C++ with
-    Data Structures and Algorithms.
-    I am a Naval NCC Cadet and my career goal is to
-    become a Software Engineer.
-  </p>
-  <div class="info">
-    <p><b>Education:</b> B.Tech in Computer Science</p>
-    <p><b>Community:</b> Naval NCC Cadet</p>
-    <p><b>Achievement:</b> NCC Push-up Gold Medal</p>
-    <p><b>Career Goal:</b> Software Engineer</p>
-  </div>
-</section>
+    <!-- Home Section -->
+    <section id="home" class="home">
 
-<section id="skills">
-  <p class="tag">MY TECHNICAL JOURNEY</p>
-  <h2>My Skills</h2>
-  <div class="cards">
-    <div class="card">HTML</div>
-    <div class="card">CSS</div>
-    <div class="card">JavaScript</div>
-    <div class="card">React – Completed</div>
-    <div class="card">Node.js – Learning</div>
-    <div class="card">C</div>
-    <div class="card">C++ with DSA – Practising</div>
-    <div class="card">GitHub</div>
-  </div>
-</section>
+        <div class="home-content">
 
-<section id="projects">
-  <p class="tag">MY IDEAS</p>
-  <h2>Projects</h2>
-  <p class="note">These are concepts and planned projects, not all completed yet.</p>
+            <p>Hello, I'm</p>
 
-  <div class="projects">
-    <div class="project">
-      <small>PLANNED</small>
-      <h3>Coaching Fee & Attendance Manager</h3>
-      <p>A system idea to manage student attendance and coaching fees.</p>
-    </div>
+            <h1>Astha Kol</h1>
 
-    <div class="project">
-      <small>EDUCATIONAL CONCEPT</small>
-      <h3>SmartVote</h3>
-      <p>A voting-awareness demo using unique IDs. Not intended for real elections.</p>
-    </div>
+            <h3>Aspiring Software Engineer</h3>
 
-    <div class="project">
-      <small>CONCEPT</small>
-      <h3>Naval NCC Management Portal</h3>
-      <p>A bilingual portal idea for cadets, attendance, camps and NCC activities.</p>
-    </div>
+            <p>
+                B.Tech Computer Science Student.
+                Learning new technologies and building
+                my skills in web development.
+            </p>
 
-    <div class="project">
-      <small>CONCEPT</small>
-      <h3>Village Development App</h3>
-      <p>A platform idea for local information and cleanliness concerns.</p>
-    </div>
+            <a href="#projects" class="btn">
+                Explore My Work
+            </a>
 
-    <div class="project">
-      <small>CONCEPT</small>
-      <h3>NGO Connect</h3>
-      <p>An idea to connect people with NGO activities and volunteering.</p>
-    </div>
+        </div>
 
-    <div class="project">
-      <small>LEARNING PROJECT</small>
-      <h3>Music Player</h3>
-      <p>A frontend practice project for playing audio files from a device.</p>
-    </div>
-  </div>
-</section>
+        <div class="profile">
+            <h1>AK</h1>
+            <p>Learn • Build • Grow</p>
+        </div>
 
-<section id="contact">
-  <p class="tag">LET'S CONNECT</p>
-  <h2>Contact Me</h2>
-  <p>Email: <a href="mailto:asthakol776@gmail.com">asthakol776@gmail.com</a></p>
-  <p>GitHub: <a href="https://github.com/asthakol776-cloud" target="_blank">My GitHub Profile</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/astha-kol-3730074" target="_blank">My LinkedIn Profile</a></p>
-</section>
+    </section>
 
-<footer>© <span id="year"></span> Astha Kol | Portfolio</footer>
-<script src="script.js"></script>
+    <!-- About Section -->
+    <section id="about">
+
+        <h2 class="heading">About <span>Me</span></h2>
+
+        <div class="about-box">
+
+            <p>
+                I am a B.Tech Computer Science student.
+                I have completed learning React and I am
+                currently learning Node.js.
+
+                I am also practising C++ with Data
+                Structures and Algorithms.
+
+                I am a Naval NCC Cadet and my career
+                goal is to become a Software Engineer.
+            </p>
+
+            <div class="details">
+                <p><b>Education:</b> B.Tech Computer Science</p>
+
+                <p><b>Community:</b> Naval NCC Cadet</p>
+
+                <p><b>Achievement:</b> NCC Push-up Gold Medal</p>
+
+                <p><b>Career Goal:</b> Software Engineer</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+
+        <h2 class="heading">My <span>Skills</span></h2>
+
+        <div class="skills-container">
+
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React - Completed</div>
+            <div class="skill">Node.js - Learning</div>
+            <div class="skill">C</div>
+            <div class="skill">C++ with DSA - Practising</div>
+            <div class="skill">GitHub</div>
+
+        </div>
+
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+
+        <h2 class="heading">My <span>Projects</span></h2>
+
+        <p class="project-note">
+            These are project ideas and learning concepts.
+        </p>
+
+        <div class="projects-container">
+
+            <div class="project">
+                <h3>Coaching Fee Manager</h3>
+                <p>Student attendance and fee management system.</p>
+            </div>
+
+            <div class="project">
+                <h3>SmartVote</h3>
+                <p>A voting awareness educational concept.</p>
+            </div>
+
+            <div class="project">
+                <h3>Naval NCC Portal</h3>
+                <p>A portal idea for NCC cadets and activities.</p>
+            </div>
+
+            <div class="project">
+                <h3>Village Development App</h3>
+                <p>A platform for village information and cleanliness.</p>
+            </div>
+
+            <div class="project">
+                <h3>NGO Connect</h3>
+                <p>Connecting people with NGO activities.</p>
+            </div>
+
+            <div class="project">
+                <h3>Music Player</h3>
+                <p>A frontend practice project.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <div class="contact-box">
+
+            <p>Email: asthakol776@gmail.com</p>
+
+            <p>
+                LinkedIn:
+                <a href="https://www.linkedin.com/in/astha-kol-3730074">
+                    My LinkedIn Profile
+                </a>
+            </p>
+
+            <p>
+                GitHub:
+                <a href="https://github.com/">
+                    My GitHub Profile
+                </a>
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Astha Kol | Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
